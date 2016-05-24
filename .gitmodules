@@ -1,0 +1,12 @@
+[submodule "Web"]
+	path = Web
+	url = git@github.com:Cobaltians-Plugins/Plugins-Pdf-Web.git
+	branch = develop
+[submodule "Android"]
+	path = Android
+	url = git@github.com:Cobaltians-Plugins/Plugins-Pdf-Android.git
+	branch = develop
+[submodule "iOS"]
+	path = iOS
+	url = git@github.com:Cobaltians-Plugins/Plugins-Pdf-iOS.git
+	branch = develop

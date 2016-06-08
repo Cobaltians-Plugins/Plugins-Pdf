@@ -8,41 +8,41 @@ This Cobalt PDF plugin allows you to open a local or remote PDF file in your mob
 * Add the cobalt.pdf.js to your web JS folder
 * Add an html link to the cobalt.pdf.js plugin script after the cobalt link in the HEAD tag
 
-### Sharing files from JavaScript
+### Open a PDF document from JavaScript
 
 use the `cobalt.openpdf` shortcut like this:
 
 ```javascript
-cobalt.openpdf({data: myPdfDatas});
+cobalt.openpdf(myPdfDatas);
 ```
 
 or with a callback:
 
 ```javascript
-cobalt.openPdf({data: myPdfDatas}, function(result){...});
+cobalt.openPdf(myPdfDatas, function(result){...});
 ```
 
 where data need a JSON Object like this, with direct url:
 
 ```javascript
-var myPdfDatas = [{
-'source': 'local',
-'path': 'http://example.com/images/cat.png',
-}];
+var myPdfDatas = {
+'source': 'url',
+'path': 'http://example.com/images/cat.png'
+};
 ```
 
 or a PDF stored in assets:
 
 ```javascript
-var myPdfDatas = [{
+var myPdfDatas = {
 'source': 'local',
 'path': 'sample.pdf',
-}];
+};
 ```
 
 And then:
 ```javascript
-cobalt.openpdf({data: myPdfDatas});
+cobalt.openpdf(myPdfDatas);
 ```
 
 ### Existing fields to fill are :
